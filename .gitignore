@@ -1,0 +1,36 @@
+# 本地环境与密钥
+.env
+.env.*
+!.env.example
+
+# 本地配置（不上传）
+config/settings.py
+
+# 数据与向量（按需：若仓库需要保留部分 JSON，见下方「例外」说明）
+*.json
+*.npy
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+
+# 运行输出
+test_output/
+output/
+*.log
+
+# IDE / 系统
+.idea/
+.vscode/
+.DS_Store
+
+# 若必须提交个别 JSON（例如示例、无敏感的小配置），可取消注释并改成实际路径：
+# !package.json
+# !some/path/allowed.json

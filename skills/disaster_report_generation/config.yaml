@@ -1,0 +1,44 @@
+# ==========================================
+# Skill: 灾害报告生成
+# ==========================================
+name: disaster_report_generation
+description: "Evaluate the type of the disaster and assess its impact on five specific aspects of buildings and the natural environment (including buildings, roads, vegetation, water bodies, and agriculture)."
+
+# ==================== 感知阶段 ====================
+perception:
+  # 开放词汇分割的概念词表
+  concepts:
+    - forest or vegetation
+    - river or water
+    - farmland
+
+  # 演化边构建参数
+  evolution_min_iou: 0.3
+  evolution_top_k: 1
+
+# ==================== 证据检索阶段 ====================
+evidence:
+  # 三大证据开关（可单独关闭）
+  enable_experience: true     # 经验证据（离线 embedding 检索）
+  enable_grounding: true      # 视觉定位证据（在线生成标注图）
+  enable_changing: true       # 语义变化证据（在线推理 + 验证）
+
+  # 经验证据 - RAG 检索配置
+  rag:
+    api_url: "http://localhost:8008"  # RAG 服务地址
+    top_k: 3                          # 返回案例数
+    timeout: 30                       # 超时时间(秒)
+
+  # VLM 生成阶段：经验证据块中写入哪些字段（检索与 JSON 仍保留完整字段）
+  experience_in_prompt:
+    include_description: true   # 历史案例灾害描述（caption）
+    include_advice: false        # 历史案例恢复建议（advice）
+
+  # 语义变化证据 - 推理与验证配置
+  semantic_change:
+    max_claims: 10                    # 最大声称数量
+    confidence_threshold: 0.7         # 验证置信度阈值
+
+# ==================== 生成阶段 ====================
+generation: {}
+    
