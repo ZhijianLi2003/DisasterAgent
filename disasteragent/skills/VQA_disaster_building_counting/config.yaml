@@ -1,0 +1,17 @@
+# ==========================================
+# Skill: 建筑物受灾统计问答 (VQA)
+# ==========================================
+name: VQA_disaster_building_counting
+description: "Count buildings by damage level (Intact / Damaged / Destroyed) from pre/post disaster images and provide a concise quantitative answer."
+
+# 流水线类型：vqa_short 表示简单问答，跳过证据检索和长报告生成
+pipeline: vqa_short
+
+# ==================== 感知阶段 ====================
+perception:
+  # 建筑任务不需要开放词汇分割（空列表表示跳过 spatial_perception）
+  concepts: []
+
+  # 演化边构建参数（建筑评估后仍需构建演化边）
+  evolution_min_iou: 0.3
+  evolution_top_k: 1
