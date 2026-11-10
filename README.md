@@ -47,4 +47,26 @@
 https://github.com/user-attachments/assets/d0795576-f231-47b1-8bfa-983ea77bedc0
 
 
+## 📁 Project structure**
+
+```text
+DisasterAgent/
+├── data/                               # Test data directory
+├── cache/                              # Service logs and runtime caches
+├── disasteragent/
+│   ├── main.py                         # Main application entry point
+│   ├── agent/                          # Perception-Augmentation-Generation workflow
+│   ├── STPG/                           # Spatiotemporal Perception Graph Memory
+│   ├── config/                         # Application configuration
+│   ├── skills/                         # Skill configurations and prompts
+│   ├── rag/                            # Retrieval service
+│   └── tool/
+│       ├── toolkit/                    # Tool registration, clients, and orchestration
+│       └── server/
+│           ├── on_line/                # online tool services
+│           └── off_line/               # offline tool results
+├── scripts/                            # some running script
+├── output/                             # Generated reports and results
+└── README.md
+```
 
