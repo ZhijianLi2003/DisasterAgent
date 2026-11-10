@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DisasterAgent generates verifiable disaster reports from bitemporal optical remote sensing imagery through skill routing, structured spatiotemporal memory, and evidence-based augmentation.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="DisasterAgent — Verifiable Disaster Reports">
+  <meta property="og:description" content="From remote sensing imagery to disaster reports with traceable evidence. Explore the demo, framework, experiments, and case studies.">
+  <meta property="og:type" content="website">
+  <title>DisasterAgent | Verifiable Disaster Reports from Remote Sensing Imagery</title>
+  <link rel="icon" type="image/png" href="assets/agent-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site-config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="wordmark" href="#home" aria-label="DisasterAgent home"><img src="assets/agent-icon.png" alt="" width="32" height="32"><span>DisasterAgent</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#overview">Overview</a><a href="#demo">Demo</a><a href="#framework">Framework</a><a href="#results">Results</a><a href="#cases">Cases</a><a href="#citation">Citation <span aria-hidden="true">↗</span></a>
+        <span class="nav-institutions">
+          <img class="cas-logo" src="assets/cas-logo.webp" alt="Chinese Academy of Sciences" width="32" height="33">
+          <img class="air-logo" src="assets/air-logo.webp" alt="Aerospace Information Research Institute" width="39" height="33">
+        </span>
+      </nav>
+    </div>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <p class="hero-kicker">REMOTE SENSING · EVIDENCE · REASONING</p>
+      <img class="hero-brand" src="assets/brand.webp" width="1185" height="180" alt="DisasterAgent">
+      <h1 id="hero-title">An Evidence-Driven Agent for<br class="desktop-break"> Verifiable Disaster Report Generation</h1>
+      <p class="hero-subtitle">From Remote Sensing Imagery</p>
+      <p class="authors"><a href="https://zhijianli2003.github.io" target="_blank" rel="noopener noreferrer" aria-label="Zhijian Li's personal homepage">Zhijian Li</a><span>,</span> Jiawei Song<span>,</span> Chao Ren<span>,</span> Yidan Zhang<span>,</span> Peijin Wang<span>,</span> Xian Sun<span>,</span> Kun Fu</p>
+      <p class="affiliations">
+        <span>Aerospace Information Research Institute, Chinese Academy of Sciences</span>
+        <span>University of Chinese Academy of Sciences</span>
+        <span>Key Laboratory of Target Cognition and Application Technology</span>
+      </p>
+      <div class="resource-links">
+        <a class="button button-dark" data-resource="paper" href="https://arxiv.org/abs/XXXX.XXXXX" target="_blank" rel="noopener noreferrer"><svg class="brand-icon arxiv-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.8423 0a1.0037 1.0037 0 0 0-.922.6078c-.1536.3687-.0438.6275.2938 1.1113l6.9185 8.3597-1.0223 1.1058a1.0393 1.0393 0 0 0 .003 1.4229l1.2292 1.3135-5.4391 6.4444c-.2803.299-.4538.823-.2971 1.1986a1.0253 1.0253 0 0 0 .9585.635.9133.9133 0 0 0 .6891-.3405l5.783-6.126 7.4902 8.0051a.8527.8527 0 0 0 .6835.2597.9575.9575 0 0 0 .8777-.6138c.1577-.377-.017-.7502-.306-1.1407l-7.0518-8.3418 1.0632-1.13a.9626.9626 0 0 0 .0089-1.3165L4.6336.4639s-.3733-.4535-.768-.463zm0 .272h.0166c.2179.0052.4874.2715.5644.3639l.005.006.0052.0055 10.169 10.9905a.6915.6915 0 0 1-.0072.945l-1.0666 1.133-1.4982-1.7724-8.5994-10.39c-.3286-.472-.352-.6183-.2592-.841a.7307.7307 0 0 1 .6704-.4401Zm14.341 1.5701a.877.877 0 0 0-.6554.2418l-5.6962 6.1584 1.6944 1.8319 5.3089-6.5138c.3251-.4335.479-.6603.3247-1.0292a1.1205 1.1205 0 0 0-.9763-.689zm-7.6557 12.2823 1.3186 1.4135-5.7864 6.1295a.6494.6494 0 0 1-.4959.26.7516.7516 0 0 1-.706-.4669c-.1119-.2682.0359-.6864.2442-.9083l.0051-.0055.0047-.0055z"/></svg>Paper <span class="button-note">arXiv</span></a>
+        <a class="button" data-resource="code" href="https://github.com/your-org/DisasterAgent" target="_blank" rel="noopener noreferrer"><svg class="brand-icon github-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>Code <span class="button-note">GitHub</span></a>
+        <a class="button" href="#demo"><svg class="video-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="m16 10 6-4v12l-6-4z"/></svg>Watch demo</a>
+      </div>
+      <figure class="hero-teaser">
+        <div class="teaser-flow">
+          <img class="teaser-input" src="assets/hero-imagery.webp" alt="Paired optical remote sensing images before and after an event" width="498" height="375">
+          <img class="teaser-arrow" src="assets/hero-arrow.webp" alt="DisasterAgent processes the image pair" width="347" height="203">
+          <button class="image-button teaser-report" data-zoom="assets/hero-report.webp" data-caption="A disaster report with numbered claims linked to visual evidence." aria-label="Enlarge example disaster report"><img src="assets/hero-report.webp" alt="Disaster report alongside color-coded citations and corresponding visual evidence" width="855" height="369"><span class="zoom-corner" aria-hidden="true">↗</span></button>
+        </div>
+        <figcaption>Generate a verifiable disaster report with <span class="marker">traceable evidence.</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="overview-section section" id="overview" aria-labelledby="overview-title">
+      <div class="container overview-grid">
+        <div><p class="eyebrow">01 / THE IDEA</p><h2 id="overview-title">Every claim,<br> backed by evidence.</h2></div>
+        <div class="overview-details">
+          <div class="overview-copy idea-callout">
+            <p class="lead">DisasterAgent links report statements to supporting evidence through <strong>inline citations</strong>, so readers can trace each claim back to its source and verify it against the imagery.</p>
+          </div>
+          <div class="idea-support">
+            <div class="idea-feature idea-memory">
+              <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><path d="M8 7h12M7 9v10m14-10v10M9 21h10M9 9l10 10"/><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="18" y="3" width="7" height="7" rx="2"/><rect x="3" y="18" width="7" height="7" rx="2"/><rect x="18" y="18" width="7" height="7" rx="2"/></svg>
+              <div><h3>Structured memory</h3><p>STPG · Spatial relations &amp; temporal changes</p></div>
+            </div>
+            <div class="idea-feature idea-evidence">
+              <svg viewBox="0 0 28 28" aria-hidden="true" focusable="false"><path d="m3 8 11-5 11 5-11 5zM3 14l11 5 11-5M3 20l11 5 11-5"/></svg>
+              <div><h3>Multi-source evidence extraction</h3><p>SCE · VGE · EEE</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="demo" aria-labelledby="demo-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / SEE IT IN ACTION</p><h2 id="demo-title">Demo Show</h2></div><span class="hand-note">Follow the evidence <span aria-hidden="true">↘</span></span></div>
+      <p class="section-intro">A case study of the 26 August 2026 debris-flow event at Gyirong Port on the China–Nepal border.</p>
+      <div class="demo-shell">
+        <div class="demo-topline"><span><span class="status-dot"></span> DisasterAgent / Workflow demo</span><span>01:01 <span class="muted">·</span> No narration</span></div>
+        <video id="demo-video" controls muted playsinline preload="metadata" poster="assets/demo-poster.webp" aria-label="DisasterAgent workflow animation using the Gyirong Port debris-flow case" aria-describedby="demo-description"><source src="assets/disasteragent-demo.mp4" type="video/mp4">Your browser does not support video. <a href="assets/disasteragent-demo.mp4">Download the demo</a>.</video>
+        <div class="demo-toolbar"><span id="demo-description">A guided walkthrough of skill routing and the PAG workflow.</span><button id="sound-toggle" type="button" aria-pressed="false"><span aria-hidden="true">♫</span> <span id="sound-label">Enable music</span></button></div>
+      </div>
+      <div class="chapters" aria-label="Video chapters">
+        <button data-time="3"><span>00:03</span>The event</button><button data-time="7.5"><span>00:07</span>Skill routing</button><button data-time="17.3"><span>00:17</span>Tool calls</button><button data-time="25.8"><span>00:25</span>STPG</button><button data-time="34.8"><span>00:34</span>Evidence</button><button data-time="46.8"><span>00:46</span>Generation</button><button data-time="56.3"><span>00:56</span>Final report</button>
+      </div>
+    </section>
+
+    <section class="section framework-section" id="framework" aria-labelledby="framework-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / HOW IT WORKS</p><h2 id="framework-title">Framework</h2></div><p class="heading-aside">Two parts. One evidence-driven agent.</p></div>
+        <div class="figure-explorer">
+          <h3 class="figure-heading" id="framework-figure-title">Full framework</h3>
+          <div id="framework-panel" role="region" aria-labelledby="framework-figure-title">
+            <figure><button class="image-button framework-image" id="framework-zoom" data-zoom="assets/framework.webp" data-caption="Overview of DisasterAgent: skill routing and the Perception–Augmentation–Generation workflow." aria-label="Enlarge framework figure"><img id="framework-image" src="assets/framework.webp" alt="DisasterAgent architecture: skill routing, specialized vision toolkit, STPG, evidence augmentation, and report generation" loading="lazy" width="2400" height="1756"><span class="zoom-label">Click to explore <span aria-hidden="true">↗</span></span></button><figcaption id="framework-caption"><strong>The complete framework.</strong> Skill routing exposes the relevant tools. The PAG workflow turns their outputs into structured memory, verified evidence, and traceable reports.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="results" aria-labelledby="results-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / EXPERIMENTS</p><h2 id="results-title">More accurate, more verifiable.</h2></div><p class="heading-aside">Evaluated on RSCC and DisasterM3.</p></div>
+      <p class="section-intro">A Qwen3.5-27B central VLM, without disaster-specific fine-tuning. Agent baselines use the same specialized vision toolkit.</p>
+      <div class="metrics">
+        <div class="metric"><span class="metric-label">RSCC · ST5-SCS</span><strong>67.18<span>%</span></strong><span class="metric-detail">+15.34 percentage points over the base VLM</span></div>
+        <div class="metric"><span class="metric-label">Disaster captioning</span><strong>2.87<span>/ 5</span></strong><span class="metric-detail">vs. 1.88 for the base VLM</span></div>
+        <div class="metric"><span class="metric-label">Restoration advice</span><strong>3.22<span>/ 5</span></strong><span class="metric-detail">vs. 2.86 for the base VLM</span></div>
+      </div>
+      <div class="results-detail">
+        <div class="benchmark-wrap">
+          <div class="tabs" role="tablist" aria-label="Benchmarks" data-tabs="benchmark"><button id="benchmark-tab-m3" role="tab" aria-selected="true" aria-controls="benchmark-panel" data-benchmark="m3">DisasterM3 Benchmark</button><button id="benchmark-tab-rscc" role="tab" aria-selected="false" aria-controls="benchmark-panel" tabindex="-1" data-benchmark="rscc">RSCC Benchmark</button></div>
+          <div id="benchmark-panel" role="tabpanel" aria-labelledby="benchmark-tab-m3" tabindex="0">
+            <p id="benchmark-description" class="table-description">2,512 optical image pairs · disaster report generation</p>
+            <div class="table-scroll" tabindex="0" role="region" aria-label="Benchmark results table">
+              <table id="benchmark-table" class="report-table">
+                <caption class="sr-only">Disaster report generation on DisasterM3</caption>
+                <thead>
+                  <tr><th scope="col" rowspan="2">Method</th><th scope="colgroup" colspan="4">Disaster captioning<span class="score-scale">Scores / 5 ↑</span></th><th scope="colgroup" colspan="4">Restoration advice<span class="score-scale">Scores / 5 ↑</span></th></tr>
+                  <tr><th scope="col"><abbr title="Average">AVG</abbr></th><th scope="col"><abbr title="Damage Assessment Precision">DAP</abbr></th><th scope="col"><abbr title="Damage Detail Recall">DDR</abbr></th><th scope="col"><abbr title="Factual Correctness">FC</abbr></th><th scope="col"><abbr title="Average">AVG</abbr></th><th scope="col"><abbr title="Recovery Necessity">RN</abbr></th><th scope="col"><abbr title="Action Priority Precision">APP</abbr></th><th scope="col"><abbr title="Strategic Completeness">SC</abbr></th></tr>
+                </thead>
+                <tbody>
+                  <tr><th scope="row">Kimi K2.6</th><td>1.37</td><td>1.61</td><td>1.21</td><td>1.30</td><td>2.96</td><td>3.52</td><td>2.78</td><td>2.57</td></tr>
+                  <tr><th scope="row">MiniMax-M3</th><td>2.03</td><td>2.31</td><td>1.80</td><td>1.97</td><td>2.79</td><td>3.37</td><td>2.58</td><td>2.42</td></tr>
+                  <tr><th scope="row">Qwen3.5-27B</th><td>1.88</td><td>2.16</td><td>1.65</td><td>1.81</td><td>2.86</td><td>3.47</td><td>2.67</td><td>2.44</td></tr>
+                  <tr><th scope="row">Qwen3.5-9B</th><td>1.71</td><td>2.02</td><td>1.47</td><td>1.65</td><td>2.62</td><td>3.23</td><td>2.43</td><td>2.19</td></tr>
+                  <tr><th scope="row">InternVL3.5-8B</th><td>1.16</td><td>1.43</td><td>0.97</td><td>1.09</td><td>2.55</td><td>3.26</td><td>2.26</td><td>2.14</td></tr>
+                  <tr><th scope="row">GeoChat-7B</th><td>0.78</td><td>0.97</td><td>0.34</td><td>1.03</td><td>1.72</td><td>2.18</td><td>1.60</td><td>1.39</td></tr>
+                  <tr><th scope="row">TeoChat-7B</th><td>1.29</td><td>1.56</td><td>0.64</td><td>1.65</td><td>1.62</td><td>2.11</td><td>1.47</td><td>1.29</td></tr>
+                  <tr><th scope="row">EarthAgent</th><td>2.36</td><td>2.72</td><td>2.03</td><td>2.34</td><td>3.15</td><td>3.76</td><td>2.96</td><td>2.74</td></tr>
+                  <tr><th scope="row">OpenEarthAgent</th><td>2.28</td><td>2.61</td><td>1.94</td><td>2.29</td><td>3.13</td><td>3.76</td><td>2.92</td><td>2.70</td></tr>
+                  <tr class="ours"><th scope="row">DisasterAgent</th><td>2.87</td><td>3.20</td><td>2.52</td><td>2.88</td><td>3.22</td><td>3.77</td><td>3.05</td><td>2.84</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <figure class="radar-figure"><button class="image-button" data-zoom="assets/radar.webp" data-caption="Disaster captioning scores across eight disaster types. All three approaches use Qwen3.5-27B as the base VLM." aria-label="Enlarge disaster captioning radar chart"><img src="assets/radar.webp" alt="Radar chart comparing the base VLM, EarthAgent, and DisasterAgent across eight disaster types" loading="lazy" width="2003" height="2111"><span class="zoom-corner" aria-hidden="true">↗</span></button><figcaption>Disaster captioning across eight disaster types.<br>Same base VLM. Stronger evidence support.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section cases-section" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">05 / BEYOND ONE EVENT</p><h2 id="cases-title">Different disasters. Traceable evidence.</h2></div><span class="hand-note">Look closer <span aria-hidden="true">↙</span></span></div>
+        <div class="tabs case-tabs" role="tablist" aria-label="Disaster case studies" data-tabs="cases"><button id="case-tab-explosion" role="tab" aria-selected="true" aria-controls="case-panel" data-case="explosion">Explosion</button><button id="case-tab-tsunami" role="tab" aria-selected="false" aria-controls="case-panel" tabindex="-1" data-case="tsunami">Tsunami</button><button id="case-tab-earthquake" role="tab" aria-selected="false" aria-controls="case-panel" tabindex="-1" data-case="earthquake">Earthquake</button><button id="case-tab-flood" role="tab" aria-selected="false" aria-controls="case-panel" tabindex="-1" data-case="flood">Flood</button><button id="case-tab-wildfire" role="tab" aria-selected="false" aria-controls="case-panel" tabindex="-1" data-case="wildfire">Wildfire</button></div>
+        <div id="case-panel" class="case-panel" role="tabpanel" aria-labelledby="case-tab-explosion" tabindex="0">
+          <div class="case-intro"><div><span class="part-label" id="case-number">CASE 01</span><h3 id="case-title">Explosion</h3></div><p id="case-description">From a misidentified event to an evidence-grounded explanation: DisasterAgent links the explosion assessment to numbered visual references.</p></div>
+          <figure><button class="image-button case-image" id="case-zoom" data-zoom="assets/case-explosion.webp" data-caption="Explosion: qualitative comparison from the DisasterAgent paper." aria-label="Enlarge case study figure"><img id="case-image" src="assets/case-explosion.webp" alt="Explosion case: input image pair, baseline output, DisasterAgent report, and annotated visual evidence" loading="lazy" width="2400" height="1885"><span class="zoom-label">Inspect the evidence <span aria-hidden="true">↗</span></span></button><figcaption id="case-caption">Original qualitative example from the paper. Colors and numbered citations connect the generated claims to the supporting imagery.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container citation-section" id="citation" aria-labelledby="citation-title">
+      <div class="citation-heading"><p class="eyebrow">06 / CITE THIS WORK</p><h2 id="citation-title">Citation</h2><p>If you find DisasterAgent useful in your research, please consider citing our work.</p><img src="assets/agent-icon.png" alt="DisasterAgent robot" width="80" height="78" loading="lazy"></div>
+      <div class="citation-box"><div class="code-topline"><span>BibTeX</span><button id="copy-citation" type="button">Copy citation <span aria-hidden="true">⧉</span></button></div><pre><code id="bibtex">@article{li2026disasteragent,
+  title   = {DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation From Remote Sensing Imagery},
+  author  = {Li, Zhijian and Song, Jiawei and Ren, Chao and Zhang, Yidan and Wang, Peijin and Sun, Xian and Fu, Kun},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre><p class="citation-note" id="citation-note">The arXiv identifier will be added with the public release.</p></div>
+    </section>
+  </main>
+
+  <footer class="site-footer container"><div><a class="wordmark" href="#home"><img src="assets/agent-icon.png" alt="" width="27" height="27"><span>DisasterAgent</span></a><p>From imagery to evidence. From evidence to reports.</p></div><div class="footer-meta"><a href="#home">Back to top ↑</a><span>Research project · 2026</span><small>Demo music: <a href="https://pixabay.com/music/corporate-upbeat-corporate-technology-191949/" target="_blank" rel="noopener noreferrer">Grand_Project / Pixabay</a></small></div></footer>
+
+  <dialog id="figure-dialog" aria-labelledby="dialog-caption"><div class="dialog-toolbar"><p id="dialog-caption">Figure</p><div><button id="zoom-toggle" type="button" aria-pressed="false">Original size</button><button id="dialog-close" type="button" aria-label="Close figure">Close ×</button></div></div><div class="dialog-image-area" id="dialog-image-area"><img id="dialog-image" alt=""></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript-note">JavaScript is disabled. The core page, demo video, and initial figures remain available. Enable JavaScript to switch figures and copy the citation.</p></noscript>
+</body>
+</html>
