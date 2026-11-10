@@ -36,12 +36,11 @@
 ## 📢 News
 
 - [2026/11/11] 🔥 Our paper is now available on arXiv. [Paper](https://arxiv.org/abs/XXXX.XXXXX)
+- [2026/11/11] 🔥 The code is being organized and will be open-sourced soon.
 
 
 
 ## 🎬 Video Demo
 
-<p align="center">
-  <video src="assets/page/assets/disasteragent-demo.mp4" poster="assets/page/assets/demo-poster.webp" width="98%" controls playsinline></video>
-</p>
+https://github.com/user-attachments/assets/ca5a3494-a6dd-43ae-835e-f222caf2dd9d
 
