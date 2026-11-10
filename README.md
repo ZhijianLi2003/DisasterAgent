@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icon.png" alt="DisasterAgent" width="180"/>
+  <img src="assets/icon.png" alt="DisasterAgent" width="150"/>
 </p>
 
 <h1 align="center"><strong>DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation from Remote Sensing Imagery</strong></h1>
@@ -26,7 +26,7 @@
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/Paper-Arxiv-red?style=flat-square&labelColor=555555" alt="Arxiv"></a>
   &nbsp;
-  <a href="assets/page/index.html"><img src="https://img.shields.io/badge/Project-Homepage-brightgreen?style=flat-square&labelColor=555555&logo=googlechrome&logoColor=white" alt="Project Homepage"></a>
+  <a href="https://zhijianli2003.github.io/DisasterAgent/"><img src="https://img.shields.io/badge/Project-Homepage-brightgreen?style=flat-square&labelColor=555555&logo=googlechrome&logoColor=white" alt="Project Homepage"></a>
 </p>
 
 <p align="center">
