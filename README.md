@@ -26,6 +26,8 @@
 <p align="center">
   <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/Paper-Arxiv-red?style=flat-square&labelColor=555555" alt="Arxiv"></a>
   &nbsp;
+  <a href="https://huggingface.co/datasets/warriorLZJ/DisasterAgent/tree/main"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-blue?style=flat-square&labelColor=555555" alt="Hugging Face Dataset&Model"></a>
+  &nbsp;
   <a href="https://zhijianli2003.github.io/DisasterAgent/"><img src="https://img.shields.io/badge/Project-Homepage-brightgreen?style=flat-square&labelColor=555555&logo=googlechrome&logoColor=white" alt="Project Homepage"></a>
 </p>
 
