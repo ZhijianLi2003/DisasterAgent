@@ -47,7 +47,7 @@
 https://github.com/user-attachments/assets/d0795576-f231-47b1-8bfa-983ea77bedc0
 
 
-## 📁 Project structure**
+## 📁 Project structure
 
 ```text
 DisasterAgent/
