@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/page/assets/agent-icon.png" alt="DisasterAgent" width="180"/>
+  <img src="assets/icon.png" alt="DisasterAgent" width="180"/>
 </p>
 
 <h1 align="center"><strong>DisasterAgent: An Evidence-Driven Agent for Verifiable Disaster Report Generation from Remote Sensing Imagery</strong></h1>
