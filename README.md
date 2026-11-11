@@ -24,7 +24,7 @@
 </p>
 
 <p align="center">
-  <a href="https://arxiv.org/abs/XXXX.XXXXX"><img src="https://img.shields.io/badge/Paper-Arxiv-red?style=flat-square&labelColor=555555" alt="Arxiv"></a>
+  <a href="https://arxiv.org/pdf/2611.13776"><img src="https://img.shields.io/badge/Paper-Arxiv-red?style=flat-square&labelColor=555555" alt="Arxiv"></a>
   &nbsp;
   <a href="https://huggingface.co/datasets/warriorLZJ/DisasterAgent/tree/main"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Dataset-blue?style=flat-square&labelColor=555555" alt="Hugging Face Dataset&Model"></a>
   &nbsp;
@@ -37,7 +37,7 @@
 
 ## 📢 News
 
-- [2026/11/11] 🔥 Our paper is now available on arXiv. [Paper](https://arxiv.org/abs/XXXX.XXXXX)
+- [2026/11/11] 🔥 Our paper is now available on arXiv. [Paper](https://arxiv.org/pdf/2611.13776)
 - [2026/11/11] 🔥 The code is being organized and will be open-sourced soon.
 
 
